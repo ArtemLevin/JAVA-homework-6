@@ -1,17 +1,21 @@
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Iterator;
 import java.util.Map;
 import java.util.Random;
 import java.util.Scanner;
+import java.util.Set;
 
 
 public class main {
 
-    public static ArrayList<Notebook> creating_notebook_storage(){
+    public static Set<Notebook> creating_notebook_storage(){
 
         Random rnd = new Random();
     
         ArrayList<String> nb_brands = new ArrayList<>();
+        
         nb_brands.add("Toshiba");
         nb_brands.add("Samsung");
         nb_brands.add("Acer");
@@ -39,70 +43,70 @@ public class main {
         nb_hdd.add("1024");
         nb_hdd.add("2048");
     
-        ArrayList<Notebook> nb_array = new ArrayList<>();
+        Set<Notebook> nb_set = new HashSet<>();
         
         Notebook nb_1 = new Notebook(nb_brands.get(rnd.nextInt(4)), nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_1);
+        nb_set.add(nb_1);
         Notebook nb_2 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_2);
+        nb_set.add(nb_2);
         Notebook nb_3 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_3);
+        nb_set.add(nb_3);
         Notebook nb_4 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_4);
+        nb_set.add(nb_4);
         Notebook nb_5 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_5);
+        nb_set.add(nb_5);
         Notebook nb_6 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_6);
+        nb_set.add(nb_6);
         Notebook nb_7 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_7);
+        nb_set.add(nb_7);
         Notebook nb_8 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_8);
+        nb_set.add(nb_8);
         Notebook nb_9 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_9);
+        nb_set.add(nb_9);
         Notebook nb_10 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_10);
+        nb_set.add(nb_10);
         Notebook nb_11= new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_11);
+        nb_set.add(nb_11);
         Notebook nb_12= new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_12);
+        nb_set.add(nb_12);
         Notebook nb_13= new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_13);
+        nb_set.add(nb_13);
         Notebook nb_14 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_14);
+        nb_set.add(nb_14);
         Notebook nb_15 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_15);
+        nb_set.add(nb_15);
         Notebook nb_16 = new Notebook(nb_brands.get(rnd.nextInt(4)), nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_16);
+        nb_set.add(nb_16);
         Notebook nb_17 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_17);
+        nb_set.add(nb_17);
         Notebook nb_18 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_18);
+        nb_set.add(nb_18);
         Notebook nb_19 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_19);
+        nb_set.add(nb_19);
         Notebook nb_20 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_20);
+        nb_set.add(nb_20);
         Notebook nb_21 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_21);
+        nb_set.add(nb_21);
         Notebook nb_22 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_22);
+        nb_set.add(nb_22);
         Notebook nb_23 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_23);
+        nb_set.add(nb_23);
         Notebook nb_24 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_24);
+        nb_set.add(nb_24);
         Notebook nb_25 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_25);
+        nb_set.add(nb_25);
         Notebook nb_26= new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_26);
+        nb_set.add(nb_26);
         Notebook nb_27= new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_27);
+        nb_set.add(nb_27);
         Notebook nb_28= new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_28);
+        nb_set.add(nb_28);
         Notebook nb_29 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_29);
+        nb_set.add(nb_29);
         Notebook nb_30 = new Notebook(nb_brands.get(rnd.nextInt(4)),nb_operatingSys.get(rnd.nextInt(4)), nb_ram.get(rnd.nextInt(4)), nb_hdd.get(rnd.nextInt(4)));
-        nb_array.add(nb_30);
+        nb_set.add(nb_30);
 
-        return nb_array;
+        return nb_set;
 
     }
 
@@ -206,45 +210,49 @@ public class main {
         return customer_choice;
     }
 
-    public static void filtration_func(ArrayList<Notebook> nb_array, Map<Integer, String> customer_choice){
+    public static void filtration_func(Set<Notebook> nb_set, Map<Integer, String> customer_choice){
 
         int counter = 0;
-    
-        for (int i = 0; i < nb_array.size(); i++) {
+
+        Iterator<Notebook> nb_set_iterator = nb_set.iterator();
+
+        while(nb_set_iterator.hasNext()) {
+
+            Notebook next_one = nb_set_iterator.next();
            
-            if(customer_choice.get(1) == nb_array.get(i).getBrand() && customer_choice.get(2) == nb_array.get(i).getOperSys() && 
-            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(nb_array.get(i).getRam()) && 
-            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(nb_array.get(i).getHdd())){
+            if(customer_choice.get(1) == next_one.getBrand() && customer_choice.get(2) == next_one.getOperSys() && 
+            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(next_one.getRam()) && 
+            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(next_one.getHdd())){
     
                 counter ++;
-                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + nb_array.get(i).getBrand() + " Операционная система: " + nb_array.get(i).getOperSys() + " ОЗУ: " + nb_array.get(i).getRam() + " Жесткий диск: " + nb_array.get(i).getHdd() );
+                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + next_one.getBrand() + " Операционная система: " + next_one.getOperSys() + " ОЗУ: " + next_one.getRam() + " Жесткий диск: " + next_one.getHdd() );
     
             }
     
-            else if(customer_choice.containsKey(1) != true && customer_choice.get(2) == nb_array.get(i).getOperSys() && 
-            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(nb_array.get(i).getRam()) && 
-            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(nb_array.get(i).getHdd())){
+            else if(customer_choice.containsKey(1) != true && customer_choice.get(2) == next_one.getOperSys() && 
+            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(next_one.getRam()) && 
+            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(next_one.getHdd())){
     
                 counter ++;
-                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + nb_array.get(i).getBrand() + " Операционная система: " + nb_array.get(i).getOperSys() + " ОЗУ: " + nb_array.get(i).getRam() + " Жесткий диск: " + nb_array.get(i).getHdd() );
+                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + next_one.getBrand() + " Операционная система: " + next_one.getOperSys() + " ОЗУ: " + next_one.getRam() + " Жесткий диск: " + next_one.getHdd() );
     
             }
     
-            else if(customer_choice.get(1) == nb_array.get(i).getBrand() && customer_choice.containsKey(2) != true && 
-            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(nb_array.get(i).getRam()) && 
-            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(nb_array.get(i).getHdd())){
+            else if(customer_choice.get(1) == next_one.getBrand() && customer_choice.containsKey(2) != true && 
+            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(next_one.getRam()) && 
+            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(next_one.getHdd())){
     
                 counter ++;
-                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + nb_array.get(i).getBrand() + " Операционная система: " + nb_array.get(i).getOperSys() + " ОЗУ: " + nb_array.get(i).getRam() + " Жесткий диск: " + nb_array.get(i).getHdd() );
+                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + next_one.getBrand() + " Операционная система: " + next_one.getOperSys() + " ОЗУ: " + next_one.getRam() + " Жесткий диск: " + next_one.getHdd() );
     
             }
     
             else if(customer_choice.containsKey(1) != true && customer_choice.containsKey(2) != true && 
-            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(nb_array.get(i).getRam()) && 
-            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(nb_array.get(i).getHdd())){
+            Integer.parseInt(customer_choice.get(3)) <= Integer.parseInt(next_one.getRam()) && 
+            Integer.parseInt(customer_choice.get(4)) <= Integer.parseInt(next_one.getHdd())){
     
                 counter ++;
-                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + nb_array.get(i).getBrand() + " Операционная система: " + nb_array.get(i).getOperSys() + " ОЗУ: " + nb_array.get(i).getRam() + " Жесткий диск: " + nb_array.get(i).getHdd() );
+                System.out.println("Ноутбук номер ----> " + counter + " Характеристики:  Брэнд: " + next_one.getBrand() + " Операционная система: " + next_one.getOperSys() + " ОЗУ: " + next_one.getRam() + " Жесткий диск: " + next_one.getHdd() );
     
             }
     
@@ -258,7 +266,7 @@ public class main {
 
         System.out.println("Заполняем склад ноутбуками...");
         System.out.println();
-        ArrayList<Notebook> nb_array = creating_notebook_storage();
+        Set<Notebook> nb_set = creating_notebook_storage();
 
         System.out.println("Покупатель настривает критерии фильтрации...");
         System.out.println();
@@ -266,6 +274,6 @@ public class main {
         
         System.out.println("Выводим ноутбуки, которые удовлетворяют критериям поиска...");
         System.out.println();
-        filtration_func(nb_array, customer_choice);  
+        filtration_func(nb_set, customer_choice);  
     }
 }
