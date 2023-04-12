@@ -110,7 +110,7 @@ public class main {
 
     }
 
-    public static Map<Integer, String> customer_choice_func(){
+    public static Map<Integer, String> customer_choice_method(){
 
         Scanner input = new Scanner(System.in);
         Map<Integer, String> customer_choice = new HashMap<Integer, String>();
@@ -210,7 +210,7 @@ public class main {
         return customer_choice;
     }
 
-    public static void filtration_func(Set<Notebook> nb_set, Map<Integer, String> customer_choice){
+    public static void filtration_method(Set<Notebook> nb_set, Map<Integer, String> customer_choice){
 
         int counter = 0;
 
@@ -270,10 +270,10 @@ public class main {
 
         System.out.println("Покупатель настривает критерии фильтрации...");
         System.out.println();
-        Map<Integer, String> customer_choice = customer_choice_func();
+        Map<Integer, String> customer_choice = customer_choice_method();
         
         System.out.println("Выводим ноутбуки, которые удовлетворяют критериям поиска...");
         System.out.println();
-        filtration_func(nb_set, customer_choice);  
+        filtration_method(nb_set, customer_choice);  
     }
 }
